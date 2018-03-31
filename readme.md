@@ -14,7 +14,7 @@ $ npm install current-android-app-version
 ```js
 const currentAndroidAppVersion = require('current-android-app-version');
 
-currentAndroidAppVersion('unicorns')
+currentAndroidAppVersion('bestande.bestande')
 .then(version => {
   // => '2.16.2'
 })
