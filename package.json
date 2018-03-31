@@ -1,0 +1,33 @@
+{
+  "name": "current-android-app-version",
+  "version": "1.0.0",
+  "description": "Get the current version of an Android app",
+  "license": "MIT",
+  "repository": "JonnyBurger/current-android-app-version",
+  "author": {
+    "name": "Jonny Burger",
+    "email": "jonathanburger11@gmail.com",
+    "url": "https://jonny.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "got": "^8.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "semver": "^5.5.0",
+    "xo": "^0.17.0"
+  }
+}
