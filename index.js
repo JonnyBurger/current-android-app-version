@@ -11,8 +11,9 @@ module.exports = appID => {
 		.then(response => {
 			const body = response.body;
 			const $ = cheerio.load(body);
-			const node = $('div:contains(Current Version)');
-			resolve($(node).last().next('div').text());
+			const node = $('div:contains(Current Version)').filter((i, n) => $(n).text() === 'Current Version');
+			console.log($(node).html())
+			resolve($(node).next().text());
 		})
 		.catch(err => {
 			if (err.statusCode === 404) {
