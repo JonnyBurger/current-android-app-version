@@ -12,7 +12,6 @@ module.exports = appID => {
 			const body = response.body;
 			const $ = cheerio.load(body);
 			const node = $('div:contains(Current Version)').filter((i, n) => $(n).text() === 'Current Version');
-			console.log($(node).html())
 			resolve($(node).next().text());
 		})
 		.catch(err => {
